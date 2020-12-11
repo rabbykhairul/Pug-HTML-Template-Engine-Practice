@@ -24,3 +24,7 @@ html
             #my-empty-div
 
             p.small-paragraph#foo This paragraph has both class and id associated with it.
+
+            - const classes = ["text-blue", "foo", "bar", "bazz"]
+            - const pStyle = { "color" : "skyblue", "font-size": "2.5vw", "text-align": "center"}
+            p(class=classes style=pStyle) The class names & inline styles for this paragraph was genereated dynamically in pug.
